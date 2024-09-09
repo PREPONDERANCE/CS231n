@@ -13,7 +13,7 @@ This repository will hold notes on [CS231n course](https://cs231n.stanford.edu/s
 │  └─ assignment2
 │  └─ assignment3
 ├─ docs/
-│  └─ content
+│  └─ content/
 │  └─ index.md
 └─ mkdocs.yml
 ```
