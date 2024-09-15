@@ -23,10 +23,12 @@ nav:
   - Content:
       - content/SVM.md
       - content/Optimization.md
+      - content/Convolution.md
+      - content/Architecture.md
 
 theme:
   name: material
-  favicon: assets/logo.jpg
+  favicon: assets/console.jpg
   features:
     - search.share
     - search.suggest
