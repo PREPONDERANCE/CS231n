@@ -28,7 +28,7 @@ nav:
 
 theme:
   name: material
-  favicon: assets/console.jpg
+  favicon: assets/console.png
   features:
     - search.share
     - search.suggest
