@@ -104,8 +104,14 @@ def svm_loss_vectorized(W, X, y, reg):
     #############################################################################
     # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
 
-    dvalues = (scores > 0).astype(float)
+    # Calculate the mask
+
+    # If the score > 0, it means derivative is 1
+    dvalues = (scores > 0).astype(float) 
+    # At each predicted position, subtract the accumulated sum of all masks
     dvalues[range(len(dvalues)), y] -= np.sum(dvalues, axis=1)
+
+    # Use the mask to perform dot product
     dW = np.dot(X.T, dvalues) / X.shape[0]
 
     dW += 2 * reg * W
